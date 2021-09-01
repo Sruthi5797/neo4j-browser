@@ -37,7 +37,7 @@ import {
   StyledInlineList
 } from './styled'
 import { GrassEditor } from './GrassEditor'
-import { RowExpandToggleComponent } from './RowExpandToggle'
+//import { RowExpandToggleComponent } from './RowExpandToggle'
 import ClickableUrls from '../../../components/ClickableUrls'
 import numberToUSLocale from 'shared/utils/number-to-US-locale'
 import { StyledTruncatedMessage } from 'browser/modules/Stream/styled'
@@ -217,7 +217,7 @@ export class InspectorComponent extends Component<
 
     return (
       <StyledStatusBar
-        fullscreen={this.props.fullscreen}
+        //fullscreen={this.props.fullscreen}
         className="status-bar"
       >
         <StyledStatus className="status">
@@ -233,14 +233,14 @@ export class InspectorComponent extends Component<
               className="inspector-footer-row"
               ref={this.setFooterRowELem.bind(this)}
             >
-              {type === 'canvas' ? null : (
+              {/* {type === 'canvas' ? null : (
                 <RowExpandToggleComponent
                   contracted={this.state.contracted}
                   rowElem={this.footerRowElem}
                   containerHeight={inspectorFooterContractedHeight}
                   onClick={this.toggleExpand.bind(this)}
                 />
-              )}
+              )} */}
               {inspectorContent}
             </StyledInspectorFooterRow>
           </StyledInspectorFooter>

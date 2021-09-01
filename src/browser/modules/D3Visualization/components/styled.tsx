@@ -20,8 +20,8 @@
 
 import styled from 'styled-components'
 
-export const legendRowHeight = 32
-export const inspectorFooterContractedHeight = 22
+export const legendRowHeight = 90
+export const inspectorFooterContractedHeight = 150
 const pMarginTop = 6
 
 export const StyledSvgWrapper = styled.div`
@@ -123,8 +123,8 @@ export const p = styled.div`
 export const StyledRowToggle = styled.div`
   float: right;
   display: block;
-  width: 21px;
-  height: 21px;
+  width: 90px;
+  height: 50px;
   line-height: 21px;
   text-align: center;
   cursor: pointer;
@@ -149,7 +149,7 @@ export const StyledInspectorFooter = styled.div`
 export const StyledInspectorFooterRow = styled.ul`
   list-style: none;
   word-break: break-word;
-  line-height: 21px;
+  line-height: 30px;
 `
 
 export const StyledInspectorFooterRowListKey = styled.div`
@@ -167,6 +167,7 @@ export const StyledInspectorFooterRowListValue = styled.div`
 export const StyledInlineList = styled.ul`
   padding-left: 0;
   list-style: none;
+  position: relative;
   word-break: break-word;
 `
 
@@ -177,8 +178,8 @@ export const StyledInlineListItem = styled.li`
 `
 
 export const StyledStatusBarWrapper = styled.div`
-  height: 68px;
-  display: none;
+  height: 100px;
+  display: relative;
 `
 
 export const StyledStatusBar = styled.div<{ fullscreen?: boolean }>`
@@ -205,7 +206,7 @@ export const StyledStatus = styled.div`
   margin-bottom: 0;
   width: 100%;
   margin-top: 3px;
-  max-height: 64px;
+  max-height: 100px;
   overflow: auto;
 `
 
@@ -340,7 +341,7 @@ export const StyledInspectorFooterStatusMessage = styled.div`
 
 export const StyledZoomHolder = styled.div<{ fullscreen: boolean }>`
   position: ${props => (props.fullscreen ? 'fixed' : 'absolute')};
-  bottom: 39px;
+  bottom: 50px;
   right: 0;
   padding: 6px 6px 0 6px;
   border-left: ${props => props.theme.inFrameBorder};

@@ -30,7 +30,7 @@ import {
   StyledTokenCount,
   StyledLegendInlineList
 } from './styled'
-import { RowExpandToggleComponent } from './RowExpandToggle'
+//import { RowExpandToggleComponent } from './RowExpandToggle'
 import numberToUSLocale from 'shared/utils/number-to-US-locale'
 
 type State = any
@@ -101,7 +101,7 @@ export class LegendComponent extends Component<any, State> {
             className="list-inline"
             ref={this.setLabelRowELem.bind(this)}
           >
-            <RowExpandToggleComponent
+            {/* <RowExpandToggleComponent
               contracted={this.state.labelRowContracted}
               rowElem={this.labelRowELem}
               containerHeight={legendRowHeight}
@@ -110,7 +110,7 @@ export class LegendComponent extends Component<any, State> {
                   labelRowContracted: !this.state.labelRowContracted
                 })
               }}
-            />
+            /> */}
             {labelList}
           </StyledLegendInlineList>
         </StyledLegendRow>
@@ -159,7 +159,7 @@ export class LegendComponent extends Component<any, State> {
             className="list-inline"
             ref={this.setTypeRowELem.bind(this)}
           >
-            <RowExpandToggleComponent
+            {/* <RowExpandToggleComponent
               contracted={this.state.typeRowContracted}
               rowElem={this.typeRowElem}
               containerHeight={legendRowHeight}
@@ -168,7 +168,7 @@ export class LegendComponent extends Component<any, State> {
                   typeRowContracted: !this.state.typeRowContracted
                 })
               }}
-            />
+            /> */}
             {relTypeList}
           </StyledLegendInlineList>
         </StyledLegendRow>

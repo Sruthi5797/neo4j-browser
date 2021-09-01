@@ -203,7 +203,7 @@ export const ContentContainer = styled.div`
 export const TitleBarHeader = styled.div`
   display: flex;
   justify-content: flex-end;
-  border-radius: 2px 2px 0 0;
-  padding-top: 3px;
-  padding-right: 7px;
+  border-radius: 19px 19px 0 0;
+  padding-top: 20px;
+  padding-right: 24px;
 `

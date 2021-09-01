@@ -228,6 +228,17 @@ export class CypherFrame extends Component<CypherFrameProps, CypherFrameState> {
           <TableIcon />
         </CypherFrameButton>
       </Render>
+      <Render if={!resultIsError(this.props.request)}>
+        <CypherFrameButton
+          data-testid="cypherFrameSidebarTable"
+          selected={this.state.openView === viewTypes.TABLE}
+          onClick={() => {
+            this.changeView(viewTypes.TABLE)
+          }}
+        >
+          <TableIcon />
+        </CypherFrameButton>
+      </Render>
       <Render
         if={
           resultHasRows(this.props.request) &&

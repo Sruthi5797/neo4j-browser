@@ -80,14 +80,14 @@ function FrameTitlebar({
   trackCollapseToggle
 }: FrameTitleBarProps) {
   const fullscreenIcon = fullscreen ? (
-    <ContractIcon width={10} />
+    <ContractIcon width={15} />
   ) : (
-    <ExpandIcon width={10} />
+    <ExpandIcon width={15} />
   )
   const expandCollapseIcon = collapse ? (
-    <DownIcon width={10} />
+    <DownIcon width={15} />
   ) : (
-    <UpIcon width={10} />
+    <UpIcon width={15} />
   )
 
   return (
@@ -101,7 +101,7 @@ function FrameTitlebar({
         }}
         pressed={pinned}
       >
-        <PinIcon width={10} />
+        <PinIcon width={15} />
       </FrameControlButton>
       <FrameControlButton
         title={collapse ? 'Expand' : 'Collapse'}
@@ -122,7 +122,7 @@ function FrameTitlebar({
         {fullscreenIcon}
       </FrameControlButton>
       <FrameControlButton title="Close" onClick={onCloseClick}>
-        <CloseIcon width={10} />
+        <CloseIcon width={15} />
       </FrameControlButton>
     </TitleBarHeader>
   )
